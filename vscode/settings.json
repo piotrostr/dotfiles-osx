@@ -1,0 +1,166 @@
+{
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [";", "r"],
+      "command": "find-it-faster.findWithinFiles"
+    },
+    {
+      "before": [";", "f"],
+      "command": "find-it-faster.findFiles"
+    },
+    {
+      "before": ["<C-w>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": [";", "d"],
+      "commands": ["workbench.actions.view.problems"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "h", "d"],
+      "commands": ["git.openChange"]
+    },
+    {
+      "before": ["g", "h", "r"],
+      "commands": ["git.revertSelectedRanges"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<C-p>"],
+      "commands": ["workbench.action.previousEditor"]
+    }
+  ],
+  "rust-analyzer.imports.granularity.group": "crate",
+  "rust-analyzer.imports.prefix": "crate",
+  "rust-analyzer.runnables.extraEnv": {
+    "RUST_BACKTRACE": "0"
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
+  "notebook.formatOnSave.enabled": true,
+  "terminal.external.osxExec": "/Applications/Alacritty.app/Contents/MacOS/alacritty",
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "SFMono Nerd Font",
+  "editor.fontSize": 14,
+  "editor.letterSpacing": 0.5,
+  "editor.lineHeight": 1.5,
+  "editor.fontVariations": true,
+  "editor.fontLigatures": true,
+  "workbench.fontAliasing": "antialiased",
+  "git.suggestSmartCommit": true,
+  "terminal.explorerKind": "external",
+  "terminal.integrated.fontFamily": "monospace",
+  "editor.inlineSuggest.enabled": true,
+  "window.nativeTabs": true,
+  "window.nativeFullScreen": true,
+  "editor.insertSpaces": false,
+  "yaml.schemas": {
+    "kubernetes": [
+      "deployment.yaml",
+      "service.yaml",
+      "manifest.yaml",
+      "ingress.yaml",
+      "pod.yaml"
+    ]
+  },
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  },
+  "[proto3]": {
+    "editor.defaultFormatter": "bufbuild.vscode-buf"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "typescript": true
+  },
+  "editor.tabSize": 2,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.lineNumbers": "relative",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "vim.leader": "<space>",
+  "go.toolsManagement.autoUpdate": true,
+  "editor.cursorStyle": "block",
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.replace": "underline",
+  "debug.allowBreakpointsEverywhere": true,
+  "git.autofetch": true,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.ignoreRebaseWarning": true,
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "redhat.telemetry.enabled": true,
+  "editor.largeFileOptimizations": false,
+  "notebook.lineNumbers": "on",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "jupyter.widgetScriptSources": ["jsdelivr.com", "unpkg.com"],
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.startupEditor": "none",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "cloudcode.project": "asoltd-guilds",
+  "[yaml]": {
+    "editor.defaultFormatter": "googlecloudtools.cloudcode"
+  },
+  "solidity.telemetry": true,
+  "application.shellEnvironmentResolutionTimeout": 20,
+  "periscope.rgQueryParams": [
+    {
+      "param": "-t $1",
+      "regex": "^(.+) -t ?(\\w+)$"
+    }
+  ],
+  "github.copilot.editor.enableAutoCompletions": true,
+  "notebook.editorOptionsCustomizations": {
+    "editor.tabSize": 4,
+    "editor.indentSize": 4
+  },
+  "cloudcode.duetAI.inlineSuggestions.enableAuto": true,
+  "diffEditor.codeLens": true,
+  "cloudcode.duetAI.codeGenerationInterface": "ghostText",
+  "git.openRepositoryInParentFolders": "never",
+  "vs-kubernetes": {
+    "vscode-kubernetes.minikube-path-mac": "/Users/piotrostr/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+  },
+  "githubPullRequests.pullBranch": "never",
+  "workbench.activityBar.location": "bottom",
+  "geminicodeassist.updateChannel": "dogfood",
+  "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
+  "workbench.navigationControl.enabled": false,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.statusBar.visible": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cursor.composer.agentLoopOnLints": false,
+  "workbench.sideBar.location": "right",
+  "git.blame.statusBarItem.enabled": true,
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false
+}
