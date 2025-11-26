@@ -1,0 +1,113 @@
+[
+  {
+    "key": "shift+k",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "workbench.action.closeQuickOpen",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "editor.action.autoFix",
+    "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "cmd+l",
+    "command": "-expandLineSelection",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+h",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "cmd+l",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "cmd+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+t e",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+t t",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+t r",
+    "command": "rust-analyzer.run"
+  },
+  {
+    "key": "ctrl+backspace",
+    "command": "-deleteLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+backspace",
+    "command": "search.action.clearSearchResults"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "shift+cmd+y",
+    "command": "composerMode.chat"
+  },
+  {
+    "key": "; r",
+    "command": "find-it-faster.findWithinFiles",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "; d",
+    "command": "workbench.action.problems.focus",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "; f",
+    "command": "find-it-faster.findFiles",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "cmd+i",
+    "command": "composerMode.agent"
+  },
+  {
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\\\r\n"
+    },
+    "when": "terminalFocus"
+  }
+]
