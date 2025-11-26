@@ -99,8 +99,6 @@ export TYPEWRITTEN_PROMPT_LAYOUT="pure"
 export TYPEWRITTEN_COLOR_MAPPINGS="primary:green"
 export TYPEWRITTEN_COLORS="arrow:white;symbol:yellow;git_branch:red;arrow:yellow"
 
-# typewritten setup
-fpath+=$HOME/.zsh/typewritten
 autoload -U promptinit; promptinit
 prompt typewritten
 
@@ -122,11 +120,11 @@ function sentra_login {
 export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
 
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export JAVA_HOME=$(/usr/libexec/java_home)
+# export JAVA_HOME=$(/usr/libexec/java_home)
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
-export JAVA_HOME="/opt/homebrew/opt/openjdk@21"
+# export JAVA_HOME="/opt/homebrew/opt/openjdk@25"
 
 # pnpm
 export PNPM_HOME="/Users/piotrostr/Library/pnpm"
@@ -154,3 +152,5 @@ merge() {
 tag() {
     git tag -l --sort=-version:refname | head -1
 }
+fpath=($fpath "/Users/piotrostr/.zfunctions")
+
