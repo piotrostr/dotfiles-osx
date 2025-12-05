@@ -1,13 +1,12 @@
 theme = dark:Gruvbox Dark,light:Gruvbox Light
-# theme = GruvboxLight
-font-family = SFMono Nerd Font
+font-family = Liga SFMono Nerd Font
 font-style-italic = false
+font-size = 15
 cursor-style = block
-font-size = 16.5
 shell-integration-features = no-cursor
 shell-integration = zsh
 command = /bin/zsh -l -c "tmux attach || tmux new"
 macos-titlebar-style = hidden
 window-padding-x = 10
 window-padding-y = 10
-
+background-opacity = 1
