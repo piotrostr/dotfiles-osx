@@ -54,18 +54,6 @@ else
   sed -i '' 's/light_theme: false/light_theme: true/' "$HOME/Library/Application Support/aichat/config.yaml"
 fi
 
-alias cursor="open -a Cursor"
-alias k="kubectl"
-alias "kgp"="kubectl get pods"
-alias "kgd"="kubectl get deployments"
-alias "kd"="kubectl describe"
-
-alias nproc="sysctl -n hw.logicalcpu"
-
-alias wip="git add . && git commit -m 'wip'"
-alias gcn="git commit -m 'nit'"
-alias claudec="/Users/piotrostr/.bun/bin/claude"
-alias vi=nvim
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
@@ -138,12 +126,11 @@ alias aws-staging='AWS_PROFILE=agent-production aws'
 alias aws-production='AWS_PROFILE=agent-staging aws'
 
 # Slack PR notifications
-export PATH="/Users/piotrostr/ambush/slackutils:$PATH"
+export PATH="$HOME/reflex/hack:$PATH"
 
-createpr() {
-    git push -u origin HEAD && gh pr create --fill
+cl() {
+    git push -u origin HEAD "$@" && gh pr create --fill
 }
-alias cl=createpr
 
 merge() {
     gh pr merge --squash && git checkout main && git pull
@@ -154,3 +141,17 @@ tag() {
 }
 fpath=($fpath "/Users/piotrostr/.zfunctions")
 
+
+alias cursor="open -a Cursor"
+alias k="kubectl"
+alias "kgp"="kubectl get pods"
+alias "kgd"="kubectl get deployments"
+alias "kd"="kubectl describe"
+
+alias nproc="sysctl -n hw.logicalcpu"
+
+alias wip="git add . && git commit -m 'wip'"
+alias gcn="git commit -m 'nit'"
+alias claudec="/Users/piotrostr/.bun/bin/claude"
+alias vi=nvim
+alias format="bun run format && git add . && gc -m 'format' --no-verify"
